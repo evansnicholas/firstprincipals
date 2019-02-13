@@ -4,7 +4,7 @@ import FrontPage from '../components/FrontPage';
 import styles from './index.modules.scss';
 
 export default () => (
-  <div className="w-100 mw8-ns center">
+  <div className="w-100 mw7 center">
     <Navbar/>
     <FrontPage/>
   </div>
