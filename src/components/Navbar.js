@@ -11,7 +11,7 @@ const style = {
 
 export default () => (
   <header className="bg-white tc avenir">
-    <div style={style} className="h5-ns h4 w-100 mb2 dt">
+    <div style={style} className="h5-ns h4 w-100 mb3-ns mb2 dt">
       <p className="dtc v-btm tl pl2">
         <a className="black fw6 f5 f3-ns link" href="/">
           STORE
