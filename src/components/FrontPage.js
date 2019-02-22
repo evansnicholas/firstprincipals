@@ -1,8 +1,6 @@
 import React from "react";
-import styles from "./FrontPage.modules.scss";
 import lighthouse from "./images/lighthouse.png";
-import firetower from "./images/firetower_clouds.jpg";
-import NewsletterSignupForm from './NewsletterSignupForm';
+import Footer from './Footer';
 
 export default () => (
   <div className="mw7 center avenir">
@@ -16,12 +14,10 @@ export default () => (
             <p className="f5 lh-copy">
               T-SHIRT made by Cottover. Fair Trade, GOTS certified cotton.
             </p>
-            <p className="f6 fw3 lh-copy mv0">Printed at KAPITAAL, Utrecht.</p>
-            <p><a class="f6 link dim br-pill ba ph3 pv2 mb2 dib black" href="#0">View in store</a></p>
+            <p className="f6 fw3 lh-copy mv0">Printed by First Principals at KAPITAAL, Utrecht.</p>
+            <p><a className="f6 link dim br-pill ba ph3 pv2 mb2 dib black" href="#0">View in store</a></p>
           </div>
         </div>
     </article>
-
-    <NewsletterSignupForm />
   </div>
 );

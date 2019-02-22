@@ -1,9 +1,8 @@
 import React from "react";
 import Site from "../components/Site";
-import FrontPage from "../components/FrontPage";
 
 export default () => (
   <Site>
-    <FrontPage />
+      <p className="pv4">Philosophy is hard, we are thinking about it.</p>
   </Site>
 );
