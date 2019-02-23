@@ -13,34 +13,35 @@ const style = {
 export default () => (
   <header className="bg-white tc avenir">
     <div style={style} className="h5-ns h4 w-100 mb3-ns mb2-ns mb1">
-      <table className="h-100 w-100">
-        <tr className="">
-          <td className="v-btm tl">
+      <div className="h-75 dt dt--fixed">
+        <Link className="dtc h-100 w-100"to="/"></Link>
+      </div>
+      <div className="h-25 dt dt--fixed">
+          <div className="dtc v-btm tl pl2 pl0-ns">
             <a
               className="black fw6 f5 f3-ns ttu link pt5"
               href="https://firstprincipals.bigcartel.com"
             >
               Store
             </a>
-          </td>
-          <td className="v-btm tl">
+          </div>
+          <div className="dtc v-btm tl">
             <Link
               className="black fw6 f5 f3-ns ttu link pl2-ns"
               to="/about"
             >
               About
             </Link>
-          </td>
-          <td className="v-btm tr">
+          </div>
+          <div className="dtc v-btm tr pr2 pr0-ns">
             <Link
               className="black fw6 f5 f3-ns ttu link"
               to="/philosophy"
             >
               Philosophy
             </Link>
-          </td>
-        </tr>
-      </table>
+          </div>
+      </div>
     </div>
   </header>
 );

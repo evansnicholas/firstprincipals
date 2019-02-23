@@ -4,6 +4,6 @@ import styles from "./about.modules.scss";
 
 export default () => (
   <Site>
-      <p className="pv4">First Principals are Nick and Jeroen. More about them soon.</p>
+      <p className="pv4 ph0-ns ph2">First Principals are Nick and Jeroen. More about them soon.</p>
   </Site>
 );
