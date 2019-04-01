@@ -13,7 +13,7 @@ const style = {
 
 export default () => (
   <header className="bg-white tc avenir">
-    <div style={style} className="h5-ns h4 w-100 mb3-ns mb2-ns mb1">
+    <div style={style} className="h5-ns h4 w-100 mb3">
       <div className="h-75 dt dt--fixed">
         <Link className="dtc h-100 w-100"to="/"></Link>
       </div>
