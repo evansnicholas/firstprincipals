@@ -7,7 +7,7 @@ import { OutboundLink } from "gatsby-plugin-google-analytics";
 export default () => (
   <header className="bg-white tc pv4 avenir">
     <Link className="dib w5" to="/">
-      <img src={logo} class="w-100" alt="First Principals" />
+      <img src={logo} class="w-100" alt="" />
     </Link>
     <nav class="tc center bt bb b--black-10 mt4">
       <OutboundLink
