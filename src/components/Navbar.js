@@ -4,13 +4,6 @@ import { Link } from "gatsby";
 import navStyles from "./Navbar.modules.scss";
 import { OutboundLink } from "gatsby-plugin-google-analytics";
 
-const style = {
-  backgroundImage: `url(${logo})`,
-  backgroundSize: "contain",
-  backgroundPosition: "center",
-  backgroundRepeat: "no-repeat"
-};
-
 export default () => (
   <header className="bg-white tc pv4 avenir">
     <Link className="dib w5" to="/">
