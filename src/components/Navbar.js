@@ -31,5 +31,3 @@ export default () => (
     </nav>
   </header>
 );
-
-//black fw6 f5 f3-ns ttu link dib pa3 ph4-l
