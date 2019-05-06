@@ -3,7 +3,7 @@ import Site from "../components/Site";
 
 export default () => (
   <Site>
-    <article className="cf ph3 ph0-ns pv2 pv5-ns">
+    <article className="cf ph3 ph0-l pv2 pv5-ns">
       <header className="fn fl-ns w-50-ns pr4-ns">
         <h1 className="f3-ns f5 fw5 mb1 mb3-ns mt0 lh-copy">The Vision</h1>
         <div className="bb bw1 w-25-ns w-10" />
@@ -17,7 +17,7 @@ export default () => (
       </div>
     </article>
 
-    <article className="cf ph3 ph0-ns pv2 pv5-ns">
+    <article className="cf ph3 ph0-l pv2 pv5-ns">
       <header className="fn fl-ns w-50-ns pr4-ns">
         <h1 className="f3-ns f5 fw5 mb1 mb3-ns mt0 lh-copy">The Reality</h1>
         <div className="bb bw1 w-25-ns w-10" />
@@ -38,7 +38,7 @@ export default () => (
       </div>
     </article>
 
-    <article className="cf ph3 ph0-ns pv2 pv5-ns">
+    <article className="cf ph3 ph0-l pv2 pv5-ns">
       <header className="fn fl-ns w-50-ns pr4-ns">
         <h1 className="f3-ns f5 fw5 mb1 mb3-ns mt0 lh-copy">The Solution</h1>
         <div className="bb bw1 w-25-ns w-10" />
@@ -59,7 +59,7 @@ export default () => (
       </div>
     </article>
 
-    <article className="cf ph3 ph0-ns pv2 pv5-ns">
+    <article className="cf ph3 ph0-l pv2 pv5-ns">
       <header className="fn fl-ns w-50-ns pr4-ns">
         <h1 className="f3-ns f5 fw5 mb1 mb3-ns mt0 lh-copy">The Spelling</h1>
         <div className="bb bw1 w-25-ns w-10" />
@@ -73,12 +73,12 @@ export default () => (
       </div>
     </article>
 
-    <h1 className="bt bw1 pt3 ph3 ph0-ns">Products</h1>
+    <h1 className="bt bw1 pt3 ph3 ph0-l">Products</h1>
 
-    <div className="cf ph3 ph0-ns">
+    <div className="cf ph3 ph0-l">
       <article className="fn fl-ns w-50-ns pr4-ns">
         <h2 className="mb4-ns mb2 ttu">#1: The T-Shirt</h2>
-        <p className="ph0-ns ph2 lh-copy tj">
+        <p className="lh-copy tj">
           For the t-shirt we start with a plain white T.
           From there we sew on the label and screen-print the design. The white t-shirt
           we use is from <a className="link" href="https://www.cottover.se/">Cottover</a>. We chose this manufacturer because
@@ -89,7 +89,7 @@ export default () => (
       </article>
       <article className="fn fl-ns w-50-ns">
         <h2 className="mb4-ns mb2 ttu">#2: The Tote Bag</h2>
-        <p className="ph0-ns ph2 lh-copy tj">
+        <p className="lh-copy tj">
           The starting point for the tote-bag is further back in the production process. We purchase
           unbleached cotton from the Utrecht fabric market (which takes place every Saturday morning).
           Our understanding of the cotton's provenance is patchy, we know only that it comes from India. 

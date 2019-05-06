@@ -5,7 +5,7 @@ import { OutboundLink } from "gatsby-plugin-google-analytics";
 
 export default () => (
   <div className="mw7 center avenir">
-    <article className="db pt4 pb2 ph3 ph2-l mb4 bt bb b--black-10 br2-ns no-underline bg-white black">
+    <article className="db pt4 pb2 ph3 ph2-l mb4 br2-ns no-underline bg-white black">
       <div className="flex flex-column flex-row-ns">
         <div className="pr3-ns mb4 mb0-ns w-100 w-40-ns">
           <img
@@ -26,7 +26,7 @@ export default () => (
           </p>
           <p>
             <OutboundLink
-              className="f6 link dim br-pill ba ph3 pv2 mb2 dib black"
+              className="f6 link bg-animate hover-moon-gray hover-bg-dark-blue br-pill ba ph3 pv2 mb2 dib black"
               href="https://firstprincipals.bigcartel.com/product/lighthouse-t-shirt"
             >
               View in store
