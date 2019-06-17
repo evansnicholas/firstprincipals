@@ -12,7 +12,7 @@ export default () => (
     <nav class="tc center bt bb b--black-10 mt4">
       <OutboundLink
         className="gray fw5 f6 f5-ns ttu link bg-animate hover-moon-gray hover-bg-dark-blue dib pa3 ph4-l"
-        href="https://firstprincipals.bigcartel.com"
+        href="https://store.fromfirstprincipals.com/"
       >
         Store
       </OutboundLink>
