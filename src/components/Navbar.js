@@ -11,19 +11,19 @@ export default () => (
     </Link>
     <nav class="tc center bt bb b--black-10 mt4">
       <OutboundLink
-        className="gray fw5 f6 f5-ns ttu link bg-animate hover-moon-gray hover-bg-dark-blue dib pa3 ph4-l"
+        className="gray fw5 f6 f5-ns ttu link bg-animate hover-black hover-bg-yellow dib pa3 ph4-l"
         href="https://store.fromfirstprincipals.com/"
       >
         Store
       </OutboundLink>
       <Link
-        className="gray fw5 f6 f5-ns ttu link bg-animate hover-moon-gray hover-bg-dark-blue dib pa3 ph4-l"
+        className="gray fw5 f6 f5-ns ttu link bg-animate hover-black hover-bg-yellow dib pa3 ph4-l"
         to="/about"
       >
         About
       </Link>
       <Link
-        className="gray fw5 f6 f5-ns ttu link bg-animate hover-moon-gray hover-bg-dark-blue dib pa3 ph4-l"
+        className="gray fw5 f6 f5-ns ttu link bg-animate hover-black hover-bg-yellow dib pa3 ph4-l"
         to="/philosophy"
       >
         Philosophy
