@@ -1,5 +1,5 @@
 import React from "react";
-import rethinkingtshirts from "./images/rethinking-tshirts-closer.jpeg";
+import rethinkingtshirts from "./images/rethinking-tshirts-closer.jpg";
 import Footer from "./Footer";
 import { OutboundLink } from "gatsby-plugin-google-analytics";
 
