@@ -1,6 +1,7 @@
 import React from "react";
 import jsonp from "jsonp";
 import instaLogo from "./icons/insta.png";
+import FooterStyles from './Footer.modules.scss';
 
 export default class Footer extends React.Component {
   constructor(props) {
@@ -66,12 +67,12 @@ export default class Footer extends React.Component {
           <legend className="pa0 f6 fw6 mb2 black-80">
             Sign up to stay in touch:
           </legend>
-          <div className="cf">
+          <div className="cf sans-serif ba b--black-20 br2">
             <label className="clip" htmlFor="email-address">
               Email Address
             </label>
             <input
-              className="f6 f5-l input-reset ba b--black-20 fl black-80 bg-white pa3 lh-solid w-100 w-75-m w-80-l br2-ns br--left-ns"
+              className="f6 f5-l input-reset bn fl black-80 bg-white pa3 lh-solid w-100 w-75-m w-80-l br2-ns br--left-ns"
               placeholder="Your Email Address"
               type="text"
               name="EMAIL"
