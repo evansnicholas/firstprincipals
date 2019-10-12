@@ -1,7 +1,6 @@
 import React from "react";
 import rethinkingtshirts from "./images/rethinking-tshirts-closer.jpg";
 import nowtakingorders from "./images/launch-tshirts.jpg";
-import nextprint from "./images/next_print.jpg"
 import Carousel from 'nuka-carousel';
 
 export default class extends React.Component {
@@ -46,10 +45,6 @@ export default class extends React.Component {
               src={nowtakingorders}
               className="w-100"
               alt="now taking orders" />
-            <img 
-              src={nextprint}
-              className="w-100"
-              alt="nextprint" />
           </Carousel>
         </article>
       </div>
