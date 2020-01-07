@@ -1,6 +1,7 @@
 module.exports = {
   plugins: [
     `gatsby-plugin-sass`,
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
@@ -14,4 +15,12 @@ module.exports = {
       }
     }
   ],
+  siteMetadata: {
+    title: "First Principals",
+    titleTemplate: "First Principals",
+    description:
+      "First Principals produces sustainable and ethical clothing - screen-printed t-shirts and limited edition made-to-measure streetwear.",
+    url: "https://www.fromfirstprincipals.com", // No trailing slash allowed!
+    image: "/logo/fp_800px.png" // Path to your image you placed in the 'static' folder
+  }
 }
