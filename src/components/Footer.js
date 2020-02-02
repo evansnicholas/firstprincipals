@@ -1,7 +1,6 @@
 import React from "react";
 import jsonp from "jsonp";
 import instaLogo from "./icons/insta.png";
-import FooterStyles from './Footer.modules.scss';
 
 export default class Footer extends React.Component {
   constructor(props) {
@@ -133,7 +132,7 @@ export default class Footer extends React.Component {
         <div className="dt dt--fixed w-100">
           <div className="dn dtc-ns v-mid">
             <p className="f7 black-70 dib pr3 mb3">
-              Copyright © First Principals 2019
+              Copyright © First Principals 2020
             </p>
           </div>
           <div className="db dtc-ns black-70 tc tr-ns v-mid">

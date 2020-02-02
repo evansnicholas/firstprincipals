@@ -1,8 +1,8 @@
 import React from "react";
 import logo from "./images/fp_800px.png";
 import { Link } from "gatsby";
-import navStyles from "./Navbar.modules.scss";
 import { OutboundLink } from "gatsby-plugin-google-analytics";
+import CookieConsent from './CookieConsent';
 
 export default () => (
   <header className="bg-white tc pv4 avenir">
@@ -29,5 +29,6 @@ export default () => (
         Philosophy
       </Link>
     </nav>
+    <CookieConsent />
   </header>
 );

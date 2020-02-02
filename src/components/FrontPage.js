@@ -27,7 +27,7 @@ export default class extends React.Component {
   render() {
     return (
       <div className="mw7 center avenir">
-        <article className="db ph3 ph2-l mb4 br2-ns no-underline bg-white black">
+        <article className="db mb4 br2-ns no-underline bg-white black">
           <Carousel
             ref={this.carousel}
             heightMode="first"
