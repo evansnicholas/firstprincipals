@@ -22,10 +22,10 @@ export default () => {
         const formData = {
             name
         }
-        axios.post("/", {
-          headers: { "Content-Type": "application/x-www-form-urlencoded" },
-          data: encode({ "form-name": "contact", ...formData })
-        })
+        axios.post("/",
+          encode({ "form-name": "contact", ...formData }),
+          { headers: { "Content-Type": "application/x-www-form-urlencoded" } }
+        )
           .then(() => setFormStatus(FormSubmitSuccessStatus))
           .catch(error => {console.log(error); setFormStatus(FormSubmitErrorStatus)});
     
