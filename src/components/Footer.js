@@ -138,12 +138,12 @@ export default class Footer extends React.Component {
               </Link>
             </div>
             <div className="mt0 mb2 pr4 f6">
-              <Link className="black-70 no-underline" to="#">
+              <Link className="black-70 no-underline" to="/faq">
                 F.A.Q.
               </Link>
             </div>
             <div className="mt0 f6">
-              <Link className="black-70 no-underline" to="#">
+              <Link className="black-70 no-underline" to="/contact">
                 Contact
               </Link>
             </div>
