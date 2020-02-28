@@ -1,6 +1,7 @@
 import React from "react";
 import jsonp from "jsonp";
 import instaLogo from "./icons/insta.png";
+import { Link } from "gatsby";
 
 export default class Footer extends React.Component {
   constructor(props) {
@@ -129,26 +130,45 @@ export default class Footer extends React.Component {
         {this.state.subscribeAttempted
           ? this.renderMessage()
           : this.renderSignUpForm()}
-        <div className="dt dt--fixed w-100">
-          <div className="dn dtc-ns v-mid">
-            <p className="f7 black-70 dib pr3 mb3">
+        <div className="h-100">
+          <div className="flex justify-center pv4">
+            <div className="mb2 pr4 f6">
+              <Link className="black-70 no-underline" to="/privacy">
+                Privacy Policy
+              </Link>
+            </div>
+            <div className="mt0 mb2 pr4 f6">
+              <Link className="black-70 no-underline" to="#">
+                F.A.Q.
+              </Link>
+            </div>
+            <div className="mt0 f6">
+              <Link className="black-70 no-underline" to="#">
+                Contact
+              </Link>
+            </div>
+          </div>
+          <div className="dt dt--fixed w-100">
+            <div className="dn dtc-ns v-mid">
+              <p className="f7 black-70 dib pr3 mb3">
+                Copyright © First Principals 2020
+              </p>
+            </div>
+            <div className="db dtc-ns black-70 tc tr-ns v-mid">
+              <a
+                href="https://www.instagram.com/firstprincipals/"
+                className="link dim dib mr3 black-70"
+                title="First Principals on Instagram"
+              >
+                <img src={instaLogo} alt="Instagram" width="32" />
+              </a>
+            </div>
+          </div>
+          <div className="db dn-ns">
+            <p className="f7 black-70 mt4 tc">
               Copyright © First Principals 2020
             </p>
           </div>
-          <div className="db dtc-ns black-70 tc tr-ns v-mid">
-            <a
-              href="https://www.instagram.com/firstprincipals/"
-              className="link dim dib mr3 black-70"
-              title="First Principals on Instagram"
-            >
-              <img src={instaLogo} alt="Instagram" width="32"/>
-            </a>
-          </div>
-        </div>
-        <div className="db dn-ns">
-          <p className="f7 black-70 mt4 tc">
-            Copyright © First Principals 2019
-          </p>
         </div>
       </div>
     );

@@ -1,6 +1,7 @@
 import React from "react";
 import Site from "../components/Site";
 import aboutImage from "../components/images/about.jpeg";
+import { LinkClasses } from "../constants";
 
 export default () => (
   <Site>
@@ -17,7 +18,7 @@ export default () => (
           <p className="f5 lh-copy tj">
             <span className="b">First Principals</span> is <span className="b">Jeroen</span> and <span className="b">Nick's </span>
              (sustainable) clothing project, based in Utrecht. It all started in 2017 with a screen-printing course at &nbsp;
-            <a className="link underline black-50 dim" href="https://kapitaalutrecht.nl/">Kapitaal</a>. We became captivated by the technique
+            <a className={LinkClasses} href="https://kapitaalutrecht.nl/">Kapitaal</a>. We became captivated by the technique
             and immediately agreed to go printing again, this time on t-shirts. The thrill of creating
             our own clothing convinced us to spend more time understanding how clothes are made. Since then we have 
             been collecting designs, learning the basics of sewing and sourcing sustainable t-shirts to print on. All with 
