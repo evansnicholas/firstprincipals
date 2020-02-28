@@ -22,7 +22,7 @@ export default () => {
         const formData = {
             name
         }
-        axios.post("/contact", {
+        axios.post("/", {
           headers: { "Content-Type": "application/x-www-form-urlencoded" },
           data: encode({ "form-name": "contact", ...formData })
         })
@@ -33,7 +33,7 @@ export default () => {
       };
 
     const renderForm = () => (
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} name="contact" data-netlify="true" data-netlify-honeypot="bot-field">
         <p>
           <label>
             Your Name:
