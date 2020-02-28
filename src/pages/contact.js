@@ -22,7 +22,7 @@ export default () => {
         const formData = {
             name
         }
-        axios.post("/", {
+        axios.post("/contact", {
           headers: { "Content-Type": "application/x-www-form-urlencoded" },
           data: encode({ "form-name": "contact", ...formData })
         })
