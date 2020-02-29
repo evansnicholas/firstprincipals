@@ -1,6 +1,7 @@
 import React from "react";
 import jsonp from "jsonp";
 import instaLogo from "./icons/insta.png";
+import { Link } from "gatsby";
 
 export default class Footer extends React.Component {
   constructor(props) {
@@ -80,7 +81,7 @@ export default class Footer extends React.Component {
               id="email-address"
             />
             <input
-              className="f6 f5-l button-reset fl pv3 tc bn bg-animate bg-black hover-bg-black white pointer w-100 w-25-m w-20-l br2-ns br--right-ns"
+              className="f6 button-reset fl pv3 tc bn bg-animate bg-black hover-bg-black white b pointer w-100 w-25-m w-20-l br2-ns br--right-ns"
               type="submit"
               value="Subscribe"
             />
@@ -125,30 +126,49 @@ export default class Footer extends React.Component {
 
   render() {
     return (
-      <div className="avenir br2-ns bb bt b--black-10 pa4 pv4-ns ph0-l">
+      <div className="avenir br2-ns bb bt b--black-10 pa3 pv4-ns ph0-l">
         {this.state.subscribeAttempted
           ? this.renderMessage()
           : this.renderSignUpForm()}
-        <div className="dt dt--fixed w-100">
-          <div className="dn dtc-ns v-mid">
-            <p className="f7 black-70 dib pr3 mb3">
+        <div className="h-100">
+          <div className="flex justify-center pv4">
+            <div className="mb2 pr4 f6">
+              <Link className="black-70 no-underline" to="/privacy">
+                Privacy Policy
+              </Link>
+            </div>
+            <div className="mt0 mb2 pr4 f6">
+              <Link className="black-70 no-underline" to="/faq">
+                F.A.Q.
+              </Link>
+            </div>
+            <div className="mt0 f6">
+              <Link className="black-70 no-underline" to="/contact">
+                Contact
+              </Link>
+            </div>
+          </div>
+          <div className="dt dt--fixed w-100">
+            <div className="dn dtc-ns v-mid">
+              <p className="f7 black-70 dib pr3 mb3">
+                Copyright © First Principals 2020
+              </p>
+            </div>
+            <div className="db dtc-ns black-70 tc tr-ns v-mid">
+              <a
+                href="https://www.instagram.com/firstprincipals/"
+                className="link dim dib mr3 black-70"
+                title="First Principals on Instagram"
+              >
+                <img src={instaLogo} alt="Instagram" width="32" />
+              </a>
+            </div>
+          </div>
+          <div className="db dn-ns">
+            <p className="f7 black-70 mt4 tc">
               Copyright © First Principals 2020
             </p>
           </div>
-          <div className="db dtc-ns black-70 tc tr-ns v-mid">
-            <a
-              href="https://www.instagram.com/firstprincipals/"
-              className="link dim dib mr3 black-70"
-              title="First Principals on Instagram"
-            >
-              <img src={instaLogo} alt="Instagram" width="32"/>
-            </a>
-          </div>
-        </div>
-        <div className="db dn-ns">
-          <p className="f7 black-70 mt4 tc">
-            Copyright © First Principals 2019
-          </p>
         </div>
       </div>
     );
