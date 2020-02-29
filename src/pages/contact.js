@@ -57,7 +57,7 @@ export default () => {
               className={`${inputBaseClasses} ${emailBorderColour}`}
               id="email-address"
               type="text"
-              name="email-address"
+              name="emailAddress"
               value={emailAddress}
               onChange={e => setEmailAddress(e.target.value)}
             />
