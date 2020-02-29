@@ -15,12 +15,21 @@ const FormSubmitErrorStatus = "formSubmitError";
 
 export default () => {
 
-    const [name, setName] = useState("");
+    const [emailAddress, setEmailAddress] = useState("");
+    const [message, setMessage] = useState("");
+    const [emailAddressRequiredAlert, setEmailAddressRequiredAlert] = useState(false);
     const [formStatus, setFormStatus] = useState(FormNotSubmittedStatus);
 
     const handleSubmit = (e) => {
+        e.preventDefault();
+
+        if (emailAddress === "") {
+          setEmailAddressRequiredAlert(true);
+          return;
+        } 
         const formData = {
-            name
+            emailAddress,
+            message
         }
         axios.post("/",
           encode({ "form-name": "contact", ...formData }),
@@ -28,35 +37,62 @@ export default () => {
         )
           .then(() => setFormStatus(FormSubmitSuccessStatus))
           .catch(error => {console.log(error); setFormStatus(FormSubmitErrorStatus)});
-    
-        e.preventDefault();
       };
 
+    const inputBaseClasses = "pa2 ba bw1 w-100";
+    const emailBorderColour = emailAddressRequiredAlert ? "b--red" : "b--black"; 
+
     const renderForm = () => (
-      <form onSubmit={handleSubmit} name="contact" data-netlify="true" data-netlify-honeypot="bot-field">
-        <p>
-          <label>
-            Your Name:
+        <form
+          onSubmit={handleSubmit}
+          name="contact"
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
+        >
+          <div className="mt3">
+            <label className="db fw4 lh-copy f6" for="email-address">
+              Your email address*:
+            </label>
             <input
+              className={`${inputBaseClasses} ${emailBorderColour}`}
+              id="email-address"
               type="text"
-              name="name"
-              value={name}
-              onChange={e => setName(e.target.value)}
+              name="email-address"
+              value={emailAddress}
+              onChange={e => setEmailAddress(e.target.value)}
             />
-          </label>
-        </p>
-        <p>
-          <button type="submit">Send</button>
-        </p>
-      </form>
+          </div>
+          <div className="mt3">
+            <label className="db fw4 lh-copy f6" for="message">
+              Your message:
+            </label>
+            <textarea
+              className={`${inputBaseClasses} b--black`}
+              id="message"
+              name="message"
+              rows="10"
+              onChange={e => setMessage(e.target.value)}
+            >
+              {message}
+            </textarea>
+          </div>
+          <div className="mt3">
+            <button
+              className="f6 br2 pa2 bn white bg-black b pointer"
+              type="submit"
+            >
+              Send
+            </button>
+          </div>
+        </form>
     );
 
     const renderSuccessMessage = () => (
-      <p>Thanks for getting in touch, we will respond as soon as possible.</p>
+      <p className="b">Thanks for getting in touch, we will respond as soon as possible.</p>
     );
 
     const renderErrorMessage = () => (
-      <p>Something went wrong submitting the form, please try again.</p>
+      <p className="b">Something went wrong submitting the form, please try again.</p>
     );
 
     const renderContact = () => {
@@ -70,7 +106,16 @@ export default () => {
 
     return (
       <Site>
-        {renderContact()}
+        <article className="pb3 ph3 ph0-l">
+          <h1>Contact</h1>
+          <p className="lh-copy">
+            If you have a question for us please don't hesitate to get in touch.
+            You can reach us on social media, write an email to
+            info [at] fromfirstprincipals.com or fill out the contact form below. We will do our best
+            to respond swiftly.
+          </p>
+          {renderContact()}
+        </article>
       </Site>
     );
 }

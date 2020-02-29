@@ -81,7 +81,7 @@ export default class Footer extends React.Component {
               id="email-address"
             />
             <input
-              className="f6 f5-l button-reset fl pv3 tc bn bg-animate bg-black hover-bg-black white pointer w-100 w-25-m w-20-l br2-ns br--right-ns"
+              className="f6 button-reset fl pv3 tc bn bg-animate bg-black hover-bg-black white b pointer w-100 w-25-m w-20-l br2-ns br--right-ns"
               type="submit"
               value="Subscribe"
             />
@@ -126,7 +126,7 @@ export default class Footer extends React.Component {
 
   render() {
     return (
-      <div className="avenir br2-ns bb bt b--black-10 pa4 pv4-ns ph0-l">
+      <div className="avenir br2-ns bb bt b--black-10 pa3 pv4-ns ph0-l">
         {this.state.subscribeAttempted
           ? this.renderMessage()
           : this.renderSignUpForm()}

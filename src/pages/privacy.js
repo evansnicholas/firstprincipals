@@ -10,7 +10,7 @@ export default () => (
         Transparency is one of our core principles and we feel it is crucial to
         be totally clear about how we handle your data. Our business is making
         and selling clothing, not data. This means that we collect only the data
-        we need to help us connect with our customers. We do not share this data
+        we need to help us connect with you, our customer. We do not share this data
         with third parties and will not (ab)use it to spam you with excessive
         amounts of advertising. We will only communicate with you when we think
         we have something worth sharing. This privacy policy will explain how
@@ -64,7 +64,7 @@ export default () => (
         First Principals collects your data so that we can:
           <ul>
             <li>Ship you your order</li>
-            <li>Keep you up-to-date with our activities and new products.</li>
+            <li>Keep you up-to-date with our activities and new products</li>
           </ul>
         
         We promise not to share your data with any third-parties (expect for the services we need to run
@@ -113,7 +113,7 @@ export default () => (
       <h2>Cookies</h2>
       <p className="f5 lh-copy">Cookies are text files placed on your computer to collect standard Internet log information and visitor behavior information. 
       Cookies are also necessary to ensure our website functions correctly.
-      When you visit our websites, we may collect information from you automatically through cookies or similar technology.
+      When you visit our website, we may collect information from you automatically through cookies or similar technology.
 
       For further information, visit allaboutcookies.org.
       </p>
@@ -131,7 +131,7 @@ export default () => (
       <p className="f5 lh-copy">
         There are a number of different types of cookies, however, our website uses:
         <ul>
-          <li>Functionality - Cookies that essential to the proper functioning of the website.</li>
+          <li>Functionality - Cookies that are essential to the proper functioning of the website.</li>
           <li>Usage patterns - Cookies that enable us to record your browsing behaviour so we can 
             understand how you are using the site (Google Analytics).
           </li>
