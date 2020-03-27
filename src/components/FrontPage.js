@@ -1,6 +1,7 @@
 import React from "react";
 import rethinkingtshirts from "./images/rethinking-tshirts-closer.jpg";
 import nowtakingorders from "./images/launch-tshirts.jpg";
+import risingvine from "./images/ben_yellow_staircase_website.jpg";
 import Carousel from 'nuka-carousel';
 
 export default class extends React.Component {
@@ -38,14 +39,31 @@ export default class extends React.Component {
             renderCenterRightControls={({ nextSlide }) => null }
             >
             <img 
+              src={risingvine}
+              className="w-100"
+              alt="rising vine" onLoad={() => this.setDimensions()}/>
+            <img 
               src={rethinkingtshirts}
               className="w-100"
-              alt="rethinking t-shirts" onLoad={() => this.setDimensions()}/>
+              alt="rethinking t-shirts" />
             <img 
               src={nowtakingorders}
               className="w-100"
               alt="now taking orders" />
           </Carousel>
+        </article>
+        <article className="mb4 tc">
+          <div class="flex justify-center mb4"><div className="bt bw2 h1 w4"></div></div>
+          <div className="f-subheadline-ns f2 lh-title fw1 mb4">We believe in</div>
+          <div className="f-headline-ns f1 lh-solid ttu tracked i underline bg-black white pa2 mb4">
+            great <tr/> design
+          </div>
+          <div className="f-subheadline-ns f2 lh-title fw1 mb4">applied to</div>
+          <div className="f-headline-ns f1 lh-solid ttu tracked i underline bg-black white pa2 mb4">sustainably sourced</div>
+          <div className="f-subheadline-ns f2 lh-title fw1 mb4">and</div>
+          <div className="f-headline-ns f1 lh-solid ttu tracked i underline bg-black white pa2 mb4">ethically produced</div>
+          <div className="f-subheadline-ns f2 lh-title fw1 mb4">clothing.</div>
+          <div class="flex justify-center"><div className="bt bw2 h1 w4"></div></div>
         </article>
       </div>
     )
