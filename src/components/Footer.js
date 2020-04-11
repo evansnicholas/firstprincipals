@@ -3,6 +3,7 @@ import jsonp from "jsonp";
 import instaLogo from "./icons/insta.png";
 import facebookLogo from "./icons/facebook.png";
 import { Link } from "gatsby";
+import TrustPilot from "./TrustPilot";
 
 export default class Footer extends React.Component {
   constructor(props) {
@@ -170,21 +171,8 @@ export default class Footer extends React.Component {
                 </a>
               </div>
             </div>
-            <div
-              class="trustpilot-widget pb3"
-              data-locale="en-GB"
-              data-template-id="56278e9abfbbba0bdcd568bc"
-              data-businessunit-id="5e04b3f476f5a3000161fc82"
-              data-style-height="52px"
-              data-style-width="100%"
-            >
-              <a
-                href="https://uk.trustpilot.com/review/fromfirstprincipals.com"
-                target="_blank"
-                rel="noopener"
-              >
-                Trustpilot
-              </a>
+            <div className="pb3">
+              <TrustPilot />
             </div>
             <div className="f7 black-70 tc">
               Copyright © First Principals 2020
