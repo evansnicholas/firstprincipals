@@ -1,6 +1,7 @@
 import React from "react";
 import jsonp from "jsonp";
 import instaLogo from "./icons/insta.png";
+import facebookLogo from "./icons/facebook.png";
 import { Link } from "gatsby";
 
 export default class Footer extends React.Component {
@@ -131,43 +132,63 @@ export default class Footer extends React.Component {
           ? this.renderMessage()
           : this.renderSignUpForm()}
         <div className="h-100">
-          <div className="flex justify-center pv4">
-            <div className="mb2 pr4 f6">
+          <div className="flex justify-center pb4">
+            <div className="pr4 f6">
               <Link className="black-70 no-underline" to="/privacy">
                 Privacy Policy
               </Link>
             </div>
-            <div className="mt0 mb2 pr4 f6">
+            <div className="pr4 f6">
               <Link className="black-70 no-underline" to="/faq">
                 F.A.Q.
               </Link>
             </div>
-            <div className="mt0 f6">
+            <div className="f6">
               <Link className="black-70 no-underline" to="/contact">
                 Contact
               </Link>
             </div>
           </div>
-          <div className="dt dt--fixed w-100">
-            <div className="dn dtc-ns v-mid">
-              <p className="f7 black-70 dib pr3 mb3">
-                Copyright © First Principals 2020
-              </p>
+          <div className="flex flex-column items-center w-100">
+            <div className="flex flex-row pb4">
+              <div className="black-70 pr2">
+                <a
+                  href="https://www.instagram.com/firstprincipals/"
+                  className="link dim dib black-70"
+                  title="First Principals on Instagram"
+                >
+                  <img src={instaLogo} alt="Instagram" width="32" />
+                </a>
+              </div>
+              <div className="black-70">
+                <a
+                  href="https://www.facebook.com/FromFirstPrincipals/"
+                  className="link dim dib black-70"
+                  title="First Principals on Instagram"
+                >
+                  <img src={facebookLogo} alt="Facebook" width="32" />
+                </a>
+              </div>
             </div>
-            <div className="db dtc-ns black-70 tc tr-ns v-mid">
+            <div
+              class="trustpilot-widget pb3"
+              data-locale="en-GB"
+              data-template-id="56278e9abfbbba0bdcd568bc"
+              data-businessunit-id="5e04b3f476f5a3000161fc82"
+              data-style-height="52px"
+              data-style-width="100%"
+            >
               <a
-                href="https://www.instagram.com/firstprincipals/"
-                className="link dim dib mr3 black-70"
-                title="First Principals on Instagram"
+                href="https://uk.trustpilot.com/review/fromfirstprincipals.com"
+                target="_blank"
+                rel="noopener"
               >
-                <img src={instaLogo} alt="Instagram" width="32" />
+                Trustpilot
               </a>
             </div>
-          </div>
-          <div className="db dn-ns">
-            <p className="f7 black-70 mt4 tc">
+            <div className="f7 black-70 tc">
               Copyright © First Principals 2020
-            </p>
+            </div>
           </div>
         </div>
       </div>
