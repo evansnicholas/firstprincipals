@@ -27,7 +27,7 @@ export default class extends React.Component {
 
   render() {
     return (
-      <div className="mw7 center avenir">
+      <div className="mw7 relative center avenir">
         <article className="db mb4 br2-ns no-underline bg-white black">
           <Carousel
             ref={this.carousel}
@@ -53,17 +53,17 @@ export default class extends React.Component {
           </Carousel>
         </article>
         <article className="mb4 tc">
-          <div class="flex justify-center mb4"><div className="bt bw2 h1 w4"></div></div>
+          <div className="flex justify-center mb4"><div className="bt bw2 h1 w4"></div></div>
           <div className="f-subheadline-ns f2 lh-title fw1 mb4">We believe in</div>
           <div className="f-headline-ns f1 lh-solid ttu tracked i underline bg-black white pa2 mb4">
-            great <tr/> design
+            great <br/> design
           </div>
           <div className="f-subheadline-ns f2 lh-title fw1 mb4">applied to</div>
           <div className="f-headline-ns f1 lh-solid ttu tracked i underline bg-black white pa2 mb4">sustainably sourced</div>
           <div className="f-subheadline-ns f2 lh-title fw1 mb4">and</div>
           <div className="f-headline-ns f1 lh-solid ttu tracked i underline bg-black white pa2 mb4">ethically produced</div>
           <div className="f-subheadline-ns f2 lh-title fw1 mb4">clothing.</div>
-          <div class="flex justify-center"><div className="bt bw2 h1 w4"></div></div>
+          <div className="flex justify-center"><div className="bt bw2 h1 w4"></div></div>
         </article>
       </div>
     )
