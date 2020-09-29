@@ -1,27 +1,18 @@
-import React, { useState } from "react";
+import React from "react";
 import styles from "./Hamburger.module.scss";
-import { CSSTransition } from "react-transition-group";
 
-export default ({ extraClasses }) => {
-  const [active, setActive] = useState(false);
+export default ({ isOpen, toggleMenu, extraClasses }) => {
+  const activeClass = isOpen ? styles.isActive : "not-active";
 
   return (
-    <CSSTransition
-      in={active}
-      timeout={500}
-      classNames={{
-          enterDone: `${styles.isActive}`
-      }}
-    >
       <button
-        className={`${styles.hamburger} ${styles.hamburgerSpring} absolute left-0 ${extraClasses}`}
+        className={`${styles.hamburger} ${styles.hamburgerSpring} absolute left-0 ${activeClass} ${extraClasses}`}
         type="button"
-        onClick={() => setActive(!active)}
+        onClick={() => toggleMenu(!isOpen)}
       >
         <span className={`${styles.hamburgerBox}`}>
           <span className={`${styles.hamburgerInner}`}></span>
         </span>
       </button>
-    </CSSTransition>
   );
 };

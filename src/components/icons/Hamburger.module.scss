@@ -1,2 +1,6 @@
 @import "./hamburgers-settings.scss";
 @import "hamburgers/_sass/hamburgers/hamburgers.scss";
+
+button:focus {
+    outline:0;
+}
