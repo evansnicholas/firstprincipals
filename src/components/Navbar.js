@@ -12,16 +12,17 @@ export default () => {
   const [isOpen, openMenu] = useState(false);
   const overflow = isOpen ? "hidden" : "visible";
   const height = isOpen ? s.fullHeight : "";
+  const lineColour = isOpen ? "b--white" : "b--black-10";
 
   return (
     <div className={`${height}`} >
       <header className="bg-white relative tc pv4 avenir h-100">
         <Helmet bodyAttributes={{ style: `overflow: ${overflow};` }} />
-        <Hamburger isOpen={isOpen} toggleMenu={openMenu} extraClasses="pl2 pl0-ns" />
+        <Hamburger isOpen={isOpen} toggleMenu={openMenu} extraClasses="pl2 pl0-l" />
         <Link className="dib w5" to="/">
           <img src={logo} className="w-100" alt="" />
         </Link>
-        <div className="bt b--black-10 mt4"></div>
+        <div className={`bt ${lineColour} mt4`}></div>
         <Menu isOpen={isOpen} />
         <CookieConsent />
       </header>

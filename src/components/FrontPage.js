@@ -1,7 +1,6 @@
 import React from "react";
-import rethinkingtshirts from "./images/rethinking-tshirts-closer.jpg";
-import nowtakingorders from "./images/launch-tshirts.jpg";
 import risingvine from "./images/ben_yellow_staircase_website.jpg";
+import vanishingStaircase from "./images/vanishing_staircase.jpg";
 import Carousel from 'nuka-carousel';
 
 export default class extends React.Component {
@@ -43,13 +42,9 @@ export default class extends React.Component {
               className="w-100"
               alt="rising vine" onLoad={() => this.setDimensions()}/>
             <img 
-              src={rethinkingtshirts}
+              src={vanishingStaircase}
               className="w-100"
-              alt="rethinking t-shirts" />
-            <img 
-              src={nowtakingorders}
-              className="w-100"
-              alt="now taking orders" />
+              alt="rising vine vanishing staircase" />
           </Carousel>
         </article>
         <article className="mb4 tc">

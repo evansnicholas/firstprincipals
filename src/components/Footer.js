@@ -69,7 +69,7 @@ export default class Footer extends React.Component {
           <legend className="pa0 f6 fw6 mb2 black-80">
             Sign up to stay in touch:
           </legend>
-          <div className="cf sans-serif ba b--black-20 br2">
+          <div className="cf relative sans-serif ba b--black-20 br2">
             <label className="clip" htmlFor="email-address">
               Email Address
             </label>
@@ -83,7 +83,7 @@ export default class Footer extends React.Component {
               id="email-address"
             />
             <input
-              className="f6 button-reset fl pv3 tc bn bg-animate bg-black hover-bg-black white b pointer w-100 w-25-m w-20-l br2-ns br--right-ns"
+              className="f6 button-reset fl absolute tc bn bg-animate bg-black hover-bg-black white b pointer h-100 w-100 w-25-m w-20-l br2-ns br--right-ns"
               type="submit"
               value="Subscribe"
             />

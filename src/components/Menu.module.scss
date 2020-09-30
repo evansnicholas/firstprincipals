@@ -13,21 +13,24 @@
     opacity: 0;
     animation: fade-in 300ms forwards;
     animation-delay: 600ms;
-    color: white;
 }
 
 .open #about-link {
     opacity: 0;
     animation: fade-in 300ms forwards;
     animation-delay: 850ms;
-    color: white;
 }
 
 .open #philosphy-link {
     opacity: 0;
     animation: fade-in 300ms forwards;
     animation-delay: 1100ms;
-    color: white;
+}
+
+.open #blog-link {
+    opacity: 0;
+    animation: fade-in 300ms forwards;
+    animation-delay: 1350ms;
 }
 
 @keyframes fade-in {

@@ -8,27 +8,34 @@ export default ({ isOpen }) => {
 
   return (
     <div className={`bg-black w-100 z-max absolute ${state} h-100`}>
-      <nav className="tc center bt bb b--black-10 mt4 flex flex-column">
+      <nav className="bt bb b--black-10 flex flex-column">
         <OutboundLink
           id={s.storeLink}
-          className="gray fw5 f6 f5-ns ttu link bg-animate hover-black hover-bg-yellow dib pa3 ph4-l"
+          className="white fw1 f1-ns f2 ttu tl link bg-animate hover-yellow pa3 bb"
           href="https://store.fromfirstprincipals.com/"
           >
           Store
       </OutboundLink>
         <Link
           id={s.aboutLink}
-          className="gray fw5 f6 f5-ns ttu link bg-animate hover-black hover-bg-yellow dib pa3 ph4-l"
+          className="white fw1 f1-ns f2 ttu tl link bg-animate hover-yellow pa3 bb"
           to="/about"
           >
           About
       </Link>
         <Link
           id={s.philosphyLink}
-          className="gray fw5 f6 f5-ns ttu link bg-animate hover-black hover-bg-yellow dib pa3 ph4-l"
+          className="white fw1 f1-ns f2 ttu tl link bg-animate hover-yellow pa3 bb"
           to="/philosophy"
           >
           Philosophy
+      </Link>
+      <Link
+          id={s.blogLink}
+          className="white fw1 f1-ns f2 ttu tl link bg-animate hover-yellow pa3 bb"
+          to="/blog"
+          >
+          Blog
       </Link>
       </nav>
     </div>
