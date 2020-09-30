@@ -83,7 +83,7 @@ export default class Footer extends React.Component {
               id="email-address"
             />
             <input
-              className="f6 button-reset fl pv3 tc bn bg-animate bg-black hover-bg-black white b pointer w-100 w-25-m w-20-l br2-ns br--right-ns"
+              className="f6 button-reset fl tc bn bg-animate bg-black hover-bg-black white b pointer pv3 w-100 w-25-m w-20-l br2-ns br--right-ns"
               type="submit"
               value="Subscribe"
             />

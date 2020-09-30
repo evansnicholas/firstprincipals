@@ -1,0 +1,44 @@
+.open {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 500ms ease-in-out, visibility 500ms;
+}
+
+.closed {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.open #store-link {
+    opacity: 0;
+    animation: fade-in 300ms forwards;
+    animation-delay: 600ms;
+}
+
+.open #about-link {
+    opacity: 0;
+    animation: fade-in 300ms forwards;
+    animation-delay: 850ms;
+}
+
+.open #philosphy-link {
+    opacity: 0;
+    animation: fade-in 300ms forwards;
+    animation-delay: 1100ms;
+}
+
+.open #blog-link {
+    opacity: 0;
+    animation: fade-in 300ms forwards;
+    animation-delay: 1350ms;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
