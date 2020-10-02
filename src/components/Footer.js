@@ -74,7 +74,7 @@ export default class Footer extends React.Component {
               Email Address
             </label>
             <input
-              className="f6 f5-l input-reset bn fl black-80 bg-white pa3 lh-solid w-100 w-75-m w-80-l br2-ns br--left-ns"
+              className="f6 f7-l input-reset bn fl black-80 bg-white pa3 lh-solid w-100 w-75-m w-80-l br2-ns br--left-ns"
               placeholder="Your Email Address"
               type="text"
               name="EMAIL"
