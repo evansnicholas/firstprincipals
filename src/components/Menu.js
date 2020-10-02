@@ -7,7 +7,7 @@ export default ({ isOpen }) => {
   const state = isOpen ? s.open : s.closed;
 
   return (
-    <div className={`bg-black w-100 z-max absolute ${state} h-100`}>
+    <div className={`bg-black w-100 z-max absolute ${state}`}>
       <nav className="bt bb b--black-10 flex flex-column">
         <OutboundLink
           id={s.storeLink}
@@ -32,7 +32,7 @@ export default ({ isOpen }) => {
       </Link>
       <Link
           id={s.blogLink}
-          className="white fw1 f1-ns f2 ttu tl link bg-animate hover-yellow pa3 bb"
+          className="white fw1 f1-ns f2 ttu tl link bg-animate hover-yellow pa3"
           to="/blog"
           >
           Blog

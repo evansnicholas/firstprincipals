@@ -7,14 +7,15 @@ import Menu from './Menu';
 import { Helmet } from "react-helmet";
 import s from './Navbar.module.scss';
 
-export default () => {
+export default ({ fadeContent }) => {
   const [isOpen, openMenu] = useState(false);
   const bodyClass = isOpen ? s.noScroll : "";
-  const height = isOpen ? s.fullHeight : "";
   const lineColour = isOpen ? "b--white" : "b--black-10";
+  
+  fadeContent(isOpen);
 
   return (
-    <div className={`${height}`} >
+    <div>
       <header className="bg-white relative tc pv4 avenir h-100">
         <Helmet bodyAttributes={{ class: bodyClass }} />
         <Hamburger isOpen={isOpen} toggleMenu={openMenu} extraClasses="pl2 pl0-l" />
