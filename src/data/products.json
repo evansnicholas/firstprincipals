@@ -2,6 +2,13 @@
     {
         "title": "Rising Vine",
         "description": "The rising vine T",
-        "id": "rising-vine"
+        "id": "rising-vine",
+        "image": "./images/rising_vine_back.jpg"
+    },
+    {
+        "title": "Rising Vine",
+        "description": "The rising vine T",
+        "id": "rising-vine-2",
+        "image": "./images/rising_vine_back.jpg"
     }
 ]
