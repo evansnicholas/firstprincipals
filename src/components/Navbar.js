@@ -18,7 +18,10 @@ export default ({ fadeContent }) => {
     <div>
       <header className="bg-white relative tc pv4 avenir h-100">
         <Helmet bodyAttributes={{ class: bodyClass }} />
-        <Hamburger isOpen={isOpen} toggleMenu={openMenu} extraClasses="pl2 pl0-l" />
+        <div className="absolute left-0">
+          <Hamburger isOpen={isOpen} toggleMenu={openMenu} extraClasses="pl2 pl0-l" />
+          <button className="snipcart-checkout">Cart</button>
+        </div>
         <Link className="dib w5" to="/">
           <img src={logo} className="w-100" alt="" />
         </Link>
