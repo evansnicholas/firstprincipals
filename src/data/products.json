@@ -1,14 +1,14 @@
 [
     {
         "title": "Rising Vine",
-        "description": "The rising vine T",
-        "id": "rising-vine",
+        "description": "<p>Design by Imme Huetink.</p><p>Production and finishing by First Principals.</p><p>Printed on a Cottover t-shirt (charcoal).</p>",
+        "id": "t-rising-vine",
         "image": "./images/rising_vine_back.jpg"
     },
     {
-        "title": "Rising Vine",
-        "description": "The rising vine T",
-        "id": "rising-vine-2",
-        "image": "./images/rising_vine_back.jpg"
+        "title": "The Lighthouse",
+        "description": "<p>The Lighthouse, designed and screen printed by First Principals in Utrecht.</p><p>The T-shirt is white, 160g, made by Cottover from FairTrade, GOTS certified cotton.</p>",
+        "id": "t-lighthouse",
+        "image": "./images/lightouse-man-23052020.jpg"
     }
 ]

@@ -8,7 +8,7 @@ export default ({ data }) => {
   const products = data.allProductsJson.edges.map((e) => {
     const product = e.node
     return (
-      <div className="w-50">
+      <div className="w-50 w-33-l pb4">
         <ProductTeaser key={product.id}  product={product} />
       </div>
 
@@ -23,7 +23,7 @@ export default ({ data }) => {
     </Site>
 )};
 
-export const query = graphql`
+export const storeQuery = graphql`
   {
     allProductsJson {
       edges {

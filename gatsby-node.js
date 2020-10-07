@@ -4,13 +4,12 @@ exports.createPages = async ({ actions: { createPage }, graphql }) => {
       allProductsJson {
         edges {
           node {
-            title
             id
           }
         }
       }
     }
-  `)
+`)
 
   results.data.allProductsJson.edges.forEach(edge => {
       const product = edge.node
