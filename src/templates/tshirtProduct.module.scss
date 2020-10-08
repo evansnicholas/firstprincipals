@@ -1,0 +1,22 @@
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    border: 0;
+    background: none;
+    width: 30px;
+    height: 30px;
+    margin-top: -15px;
+    padding: 5px;
+}
+
+.next {
+    right: 0;
+}
+
+.slide {
+    display: none;
+}
+
+.active {
+    display: block;
+}
