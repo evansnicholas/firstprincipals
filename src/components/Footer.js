@@ -128,7 +128,7 @@ export default class Footer extends React.Component {
 
   render() {
     return (
-      <div className="avenir br2-ns bb bt b--black-10 pa3 pv4-ns ph0-l">
+      <div className="avenir bb bt b--black-10 pa3 pv4-ns ph0-l">
         {this.state.subscribeAttempted
           ? this.renderMessage()
           : this.renderSignUpForm()}

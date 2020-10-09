@@ -6,7 +6,7 @@ export default ({ isOpen, toggleMenu, extraClasses }) => {
 
   return (
       <button
-        className={`${styles.hamburger} ${styles.hamburgerSpring} absolute left-0 ${activeClass} ${extraClasses}`}
+        className={`${styles.hamburger} ${styles.hamburgerSpring} ${activeClass} ${extraClasses}`}
         type="button"
         onClick={() => toggleMenu(!isOpen)}
       >

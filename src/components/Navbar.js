@@ -6,6 +6,7 @@ import Hamburger from './icons/Hamburger';
 import Menu from './Menu';
 import { Helmet } from "react-helmet";
 import s from './Navbar.module.scss';
+import CartIcon from './icons/CartIcon';
 
 export default ({ fadeContent }) => {
   const [isOpen, openMenu] = useState(false);
@@ -18,7 +19,12 @@ export default ({ fadeContent }) => {
     <div>
       <header className="bg-white relative tc pv4 avenir h-100">
         <Helmet bodyAttributes={{ class: bodyClass }} />
-        <Hamburger isOpen={isOpen} toggleMenu={openMenu} extraClasses="pl2 pl0-l" />
+        <div className="absolute left-0">
+          <Hamburger isOpen={isOpen} toggleMenu={openMenu} extraClasses="pl2 pl0-l pr1" />
+          <button className={`snipcart-checkout ${s.cart} dn`}>
+            <CartIcon/>
+          </button>
+        </div>
         <Link className="dib w5" to="/">
           <img src={logo} className="w-100" alt="" />
         </Link>

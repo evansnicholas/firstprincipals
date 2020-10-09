@@ -1,0 +1,11 @@
+.title {
+  position: relative;
+  left: 0;
+  right: 100%;
+  transition: left 500ms
+}
+
+.product-box:hover .title {
+  right: 0;
+  left: 15%;
+}
