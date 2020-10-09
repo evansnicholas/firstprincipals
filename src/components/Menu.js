@@ -1,6 +1,5 @@
 import React from "react";
 import s from './Menu.module.scss';
-import { OutboundLink } from "gatsby-plugin-google-analytics";
 import { Link } from "gatsby";
 
 export default ({ isOpen }) => {
@@ -9,13 +8,13 @@ export default ({ isOpen }) => {
   return (
     <div className={`bg-black w-100 z-max absolute ${state}`}>
       <nav className="bt bb b--black-10 flex flex-column">
-        <OutboundLink
+        <Link
           id={s.storeLink}
           className="white fw1 f1-ns f2 ttu tl link bg-animate hover-yellow pa3 bb"
-          href="https://store.fromfirstprincipals.com/"
+          href="/store"
           >
           Store
-      </OutboundLink>
+        </Link>
         <Link
           id={s.aboutLink}
           className="white fw1 f1-ns f2 ttu tl link bg-animate hover-yellow pa3 bb"
