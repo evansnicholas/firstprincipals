@@ -11,7 +11,7 @@ export default ({ product }) => {
               <span class={s.title}>{product.title}</span>
             </div>
             <Image
-              fluid={product.image.childImageSharp.fluid}
+              fluid={product.images[0].image.childImageSharp.fluid}
               alt={product.title}
               style={{}}
               className=""

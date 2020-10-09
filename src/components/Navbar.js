@@ -21,7 +21,7 @@ export default ({ fadeContent }) => {
         <Helmet bodyAttributes={{ class: bodyClass }} />
         <div className="absolute left-0">
           <Hamburger isOpen={isOpen} toggleMenu={openMenu} extraClasses="pl2 pl0-l pr1" />
-          <button className={`snipcart-checkout ${s.cart}`}>
+          <button className={`snipcart-checkout ${s.cart} dn`}>
             <CartIcon/>
           </button>
         </div>

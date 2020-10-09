@@ -30,10 +30,12 @@ export const storeQuery = graphql`
         node {
           title
           id
-          image {
-            childImageSharp {
-              fluid {
-                ...GatsbyImageSharpFluid
+          images {
+            image {
+              childImageSharp {
+                fluid {
+                  ...GatsbyImageSharpFluid
+                }
               }
             }
           }
