@@ -1,5 +1,17 @@
 module.exports = {
   plugins: [
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `First Principals`,
+        short_name: `FPS`,
+        start_url: `/`,
+        background_color: `#ffffff`,
+        theme_color: `#000000`,
+        display: `standalone`,
+        icon: `src/components/images/compact_logo.png`
+      },
+    },
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     {
@@ -48,7 +60,7 @@ module.exports = {
     title: "First Principals",
     titleTemplate: "First Principals",
     description:
-      "First Principals produces sustainable and ethical clothing - screen-printed t-shirts and limited edition made-to-measure streetwear.",
+      "First Principals produces sustainable and ethical clothing in London.",
     url: "https://www.fromfirstprincipals.com", // No trailing slash allowed!
     image: "/logo/fp_800px.png" // Path to your image you placed in the 'static' folder
   }
