@@ -7,7 +7,7 @@ import leftArrow from '../components/icons/left_arrow.svg';
 import rightArrow from '../components/icons/right_arrow.svg'; 
 
 function createProductDesc(desc) {
-  return { __html: `<div>${desc}</div>` }
+  return { __html: desc }
 }
 
 function setActive(updateActive, numImages, newActive) {
@@ -57,7 +57,7 @@ export default ({ data }) => {
           </div>
           <div className="w-100 w-50-l pl3-l">
             <h1 className="fw1 mt0 pb2 pt3 pt0-l bb">{product.title}</h1>
-            <p className="f6" dangerouslySetInnerHTML={createProductDesc(product.description)}></p>
+            <div className="f6" dangerouslySetInnerHTML={createProductDesc(product.description)}></div>
             <div className="relative">
               <p className="b">EUR {product.price}</p>
               <button
