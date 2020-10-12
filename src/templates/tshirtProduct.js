@@ -7,7 +7,7 @@ import leftArrow from '../components/icons/left_arrow.svg';
 import rightArrow from '../components/icons/right_arrow.svg'; 
 
 function createProductDesc(desc) {
-  return { __html: desc }
+  return { __html: `<div>${desc}</div>` }
 }
 
 function setActive(updateActive, numImages, newActive) {
