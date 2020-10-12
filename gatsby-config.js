@@ -31,7 +31,8 @@ module.exports = {
         options: {
             version: '3.0.22',
             publicApiKey: 'NDY1ZTRkNjUtNjIzMi00YzNlLTkwYmEtYWM1YjA2YTRjMDc5NjM3MzcyNTA1NjMxMTcwODc3',
-            defaultLang: 'en'
+            defaultLang: 'en',
+            currency: 'eur'
         }
     },
     `gatsby-transformer-json`,
