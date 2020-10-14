@@ -55,7 +55,16 @@ module.exports = {
         defaultQuality: 50,
       },
     },
-    `gatsby-transformer-sharp`
+    `gatsby-transformer-sharp`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `markdown-pages`,
+        path: `${__dirname}/src/blog-posts/`,
+        ignore: [`**/\.*`], // ignore files starting with a dot
+      }
+    },
+    `gatsby-transformer-remark`
   ],
   siteMetadata: {
     title: "First Principals",

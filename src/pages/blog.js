@@ -1,13 +1,40 @@
 import React from "react";
 import Site from "../components/Site";
+import PostLink from '../components/PostLink';
 
-export default () => (
-  <Site>
-    <article className="pb3 ph3 ph0-l">
-          <h1>Blog</h1>
-          <p className="lh-copy">
-            This where will we share insights into our journey, our opinion, our values...
-          </p>
-    </article>
-  </Site>
-);
+export default ({ data }) => { 
+  
+  const edges = data.allMarkdownRemark.edges;
+  const posts = edges
+    .map(edge => { 
+      return (
+        <div className="w-100">
+          <PostLink key={edge.node.id} post={edge.node} />
+        </div>
+      );
+    });
+
+  return (
+    <Site>
+      <div className="flex flex-wrap pb4">
+        { posts }
+      </div>
+    </Site>
+  )};
+
+export const pageQuery = graphql`
+  query {
+    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+      edges {
+        node {
+          id
+          excerpt(pruneLength: 250)
+          frontmatter {
+            date(formatString: "MMMM DD, YYYY")
+            id
+            title
+          }
+        }
+      }
+    }
+  }`

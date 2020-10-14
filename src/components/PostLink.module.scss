@@ -1,0 +1,13 @@
+.post-link-container {
+    width: 100%;
+    padding-top: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.post-link-inside {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}

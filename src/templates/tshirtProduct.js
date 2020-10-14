@@ -4,7 +4,8 @@ import Image from "gatsby-image"
 import { Link } from "gatsby";
 import s from './tshirtProduct.module.scss';
 import leftArrow from '../components/icons/left_arrow.svg';
-import rightArrow from '../components/icons/right_arrow.svg'; 
+import rightArrow from '../components/icons/right_arrow.svg';
+import { graphql } from "gatsby"
 
 function createProductDesc(desc) {
   return { __html: desc }
