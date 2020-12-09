@@ -11,7 +11,7 @@ export default ({ isOpen }) => {
         <Link
           id={s.storeLink}
           className="white fw1 f1-ns f2 ttu tl link bg-animate hover-yellow pa3 bb"
-          href="/store"
+          to="/store"
           >
           Store
         </Link>

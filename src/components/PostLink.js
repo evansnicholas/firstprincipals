@@ -5,7 +5,7 @@ import { Link } from "gatsby";
 export default ({ post }) => {
 
     return (
-      <div className={`bb bt ph2 ph0-l`}>
+      <div className={`ph2 ph0-l`}>
         <div className={`mv3`}>
             <Link 
               className={`${s.postLink} black dim link`}

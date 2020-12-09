@@ -6,9 +6,13 @@ export default ({ data }) => {
   
   const edges = data.allMarkdownRemark.edges;
   const posts = edges
-    .map(edge => { 
+    .map((edge,  index) => {
+      let classes = 'w-100';
+      if (index < edges.length - 1) {
+        classes = `${classes} bb`;
+      }
       return (
-        <div className="w-100">
+        <div key={index} className={classes}>
           <PostLink key={edge.node.id} post={edge.node} />
         </div>
       );
