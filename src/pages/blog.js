@@ -7,9 +7,11 @@ export default ({ data }) => {
   const edges = data.allMarkdownRemark.edges;
   const posts = edges
     .map((edge,  index) => {
+      const isFirst = index === 0;
+      const isLast = index === edges.length - 1;
       let classes = 'w-100';
-      if (index < edges.length - 1) {
-        classes = `${classes} bb`;
+      if (!isLast) {
+        classes = `${classes} bb pb4 mb4`;
       }
       return (
         <div key={index} className={classes}>
