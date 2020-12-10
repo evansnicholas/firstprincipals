@@ -64,7 +64,20 @@ module.exports = {
         ignore: [`**/\.*`], // ignore files starting with a dot
       }
     },
-    `gatsby-transformer-remark`
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 800,
+              wrapperStyle: 'margin-bottom: 35px; margin-top: 35px;'
+            }
+          }
+        ]
+      }
+    }
   ],
   siteMetadata: {
     title: "First Principals",
