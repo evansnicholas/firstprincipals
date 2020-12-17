@@ -15,7 +15,7 @@ Learning how to make clothing involves understanding not only the design process
 
 Once the material for the garment has been selected, the manufacturing proceeds through two stages: pattern making/cutting and stitching. These are the skills that we will develop at the FTA. Patterns are the building blocks from which the clothing is made. The patterns are laid out as efficiently as possible on the fabric. The fabric is then cut according to the patterns. The pieces of fabric are then stitched together into finished garments. When stitching a garment there are many decisions to make about which techniques to use, for instance what kind of needle, what kind of stitch... Making the correct choices is essential to ensure not only that the finished garments will look good, but also that they are solid and will last.
 
-![FTA workspace](images/fta_workspace.jpg "FTA workspace")
+![FTA workspace](images/fta_made_in_london.jpg "FTA workspace")
 
 ## Small batch production
 

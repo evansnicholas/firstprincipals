@@ -16,7 +16,7 @@ export default ({ data }) => {
 
     return (
       <Site>
-        <article className={`${s.blog}`}>
+        <article className={`${s.blog} pv4`}>
           <div className='blog-post-container ph2 ph0-l'>
             <div className="blog-post">
               <h1 className="mb0 f1">{frontmatter.title}</h1>

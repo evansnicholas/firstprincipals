@@ -1,0 +1,54 @@
+.open {
+    opacity: 0;
+    animation: fade-in 500ms forwards;
+}
+
+.close {
+    animation: fade-out 500ms forwards;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.button {
+    background: white;
+    border: 0;
+}
+
+.plus {
+    position: relative;
+    width: 25px;
+    height: 25px;
+}
+
+.horizontal-plus {
+  position: absolute;
+  background-color: black;
+  width: 100%;
+  height: 10%;
+  top: 45%;
+}
+.vertical-plus {
+  position: absolute;
+  background-color: black;
+  width: 10%;
+  height: 100%;
+  left: 45%;
+}

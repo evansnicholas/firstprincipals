@@ -17,7 +17,7 @@ export default ({ data }) => {
 
   return( 
     <Site>
-      <div className="flex">
+      <div className="flex pv4">
         { products }
       </div>
     </Site>

@@ -4,7 +4,7 @@ import { LinkClasses } from '../constants';
 
 export default () => (
   <Site>
-      <article className="ph3 ph0-l">
+      <article className="ph3 ph0-l pv3">
         <h1>F.A.Q.</h1>
         
         <h2>How do I know First Principals is trustworthy?</h2>

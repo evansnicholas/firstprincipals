@@ -106,7 +106,7 @@ export default () => {
 
     return (
       <Site>
-        <article className="pb3 ph3 ph0-l">
+        <article className="pv3 ph3 ph0-l">
           <h1>Contact</h1>
           <p className="lh-copy">
             If you have a question for us please don't hesitate to get in touch.
