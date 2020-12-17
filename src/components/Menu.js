@@ -16,11 +16,11 @@ export default ({ isOpen }) => {
           Store
         </Link>
         <Link
-          id={s.aboutLink}
+          id={s.ourstoryLink}
           className="white fw1 f1-ns f2 ttu tl link bg-animate hover-yellow pa3 bb"
-          to="/about"
+          to="/ourstory"
           >
-          About
+          Our Story
       </Link>
         <Link
           id={s.philosphyLink}

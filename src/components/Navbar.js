@@ -17,7 +17,7 @@ export default ({ fadeContent }) => {
 
   return (
     <div>
-      <header className="bg-white relative tc pv4 avenir h-100">
+      <header className="bg-white relative tc pt2 avenir h-100">
         <Helmet bodyAttributes={{ class: bodyClass }} />
         <div className="absolute left-0">
           <Hamburger isOpen={isOpen} toggleMenu={openMenu} extraClasses="pl2 pl0-l pr1" />
@@ -25,10 +25,10 @@ export default ({ fadeContent }) => {
             <CartIcon/>
           </button>
         </div>
-        <Link className="dib w5" to="/">
+        <Link className="dib w4 pv3" to="/">
           <img src={logo} className="w-100" alt="" />
         </Link>
-        <div className={`bt ${lineColour} mt4`}></div>
+        <div className={`bt ${lineColour}`}></div>
         <Menu isOpen={isOpen} />
         <CookieConsent />
       </header>

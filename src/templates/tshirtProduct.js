@@ -41,7 +41,7 @@ export default ({ data }) => {
 
   return (
     <Site>
-      <section className="mh3 mh0-l pb4">
+      <section className="mh3 mh0-l pb4 pv4">
         <div className="flex flex-wrap">
           <div className="w-100 w-50-l relative">
             { images }

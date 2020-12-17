@@ -5,7 +5,7 @@ import { Link } from "gatsby";
 
 export default ({ product }) => {
     return (
-        <div className={`mh3 ${s.productBox} relative`}>
+        <div className={`mh3 ml0-l ${s.productBox} relative`}>
           <Link className="link black no-underline dim black-50" to={product.id}>
             <div className={`f6 fw5 ttu bb pb1 mb2 relative`}>
               <span class={s.title}>{product.title}</span>

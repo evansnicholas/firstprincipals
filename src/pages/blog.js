@@ -22,7 +22,7 @@ export default ({ data }) => {
 
   return (
     <Site>
-      <div className="flex flex-wrap pb4">
+      <div className="flex flex-wrap pv4">
         { posts }
       </div>
     </Site>
