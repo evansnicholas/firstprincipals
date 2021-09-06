@@ -1,7 +1,12 @@
 import React from "react";
-import risingvine from "./images/ben_yellow_staircase_website.jpg";
+import peopleInField from "./images/people_in_field_4x3.jpg";
+import losanges_4x3 from "./images/losange_4x3.jpg";
 import vanishingStaircase from "./images/vanishing_staircase.jpg";
+import flaxFromTop from "./images/flax_from_top.jpg";
+import losangesNoBackground from "./images/losanges_no_background.jpg";
 import Carousel from 'nuka-carousel';
+import s from './FrontPage.module.scss';
+import { Link } from "gatsby";
 
 export default class extends React.Component {
 
@@ -38,18 +43,49 @@ export default class extends React.Component {
             renderCenterRightControls={({ nextSlide }) => null }
             >
             <img 
-              src={risingvine}
+              src={losanges_4x3}
               className="w-100"
-              alt="rising vine" onLoad={() => this.setDimensions()}/>
+              alt="Linen T printed with losange pattern" onLoad={() => this.setDimensions()}/>
             <img 
-              src={vanishingStaircase}
+              src={peopleInField}
               className="w-100"
-              alt="rising vine vanishing staircase" />
+              alt="Harvesters in flax field" />
           </Carousel>
         </article>
         <article className="mb4 tc">
           <div className="flex justify-center mb4"><div className="bt bw2 h1 w4"></div></div>
-          <div className="f-subheadline-ns f2 lh-title fw1 mb4">We believe in</div>
+          <div className="flex flex-wrap pb2 pb4-ns ph2 ph0-l">
+            <div className="w-100 w-50-ns flex items-center">
+              <div className="f2 lh-title fw3 tl w-100 pl2 pr5 bl">From the raw material ...</div>
+            </div>
+            <div className="w-100 w-50-ns mv3">
+              <img 
+              src={flaxFromTop}
+              className="w-100"
+              alt="Flax lying on ground." />
+            </div>
+            <div className="flex dn-ns items-center">
+              <div className="f2 lh-title fw3 tr w-100 pl5 br pr2">... to the final product.</div>
+            </div>
+            <div className="w-100 w-50-ns mv3">
+              <img 
+              src={losangesNoBackground}
+              className="w-100"
+              alt="Screen printed linen T-Shirt." />
+            </div>
+            <div className="dn flex-ns w-100 w-50-ns items-center pr2">
+              <div className="f2 lh-title fw3 tr w-100 br pr2 pl5">... to the final product.</div>
+            </div>
+          </div>
+
+         <div className="f2 lh-title fw3 pb3">We strive to be a</div>
+         <div className="f2 lh-title fw3 ttu tracked i pb3 underline">vertically integrated</div>
+         <div className="f2 lh-title fw3 pb3">clothing company.</div>
+         <div>
+           <Link className="f5 i dib outline pa2 black no-underline" to="/philosophy">What does that mean?</Link>
+        </div>
+
+          {/* <div className="f-subheadline-ns f2 lh-title fw1 mb4">We believe in</div>
           <div className="f-headline-ns f1 lh-solid ttu tracked i underline bg-black white pa2 mb4">
             great <br/> design
           </div>
@@ -58,7 +94,10 @@ export default class extends React.Component {
           <div className="f-subheadline-ns f2 lh-title fw1 mb4">and</div>
           <div className="f-headline-ns f1 lh-solid ttu tracked i underline bg-black white pa2 mb4">ethically produced</div>
           <div className="f-subheadline-ns f2 lh-title fw1 mb4">clothing.</div>
-          <div className="flex justify-center"><div className="bt bw2 h1 w4"></div></div>
+          <div className="flex justify-center"><div className="bt bw2 h1 w4"></div></div> */}
+
+
+          
         </article>
       </div>
     )
