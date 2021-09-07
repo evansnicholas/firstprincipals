@@ -7,7 +7,6 @@ export default ({ data }) => {
   const edges = data.allMarkdownRemark.edges;
   const posts = edges
     .map((edge,  index) => {
-      const isFirst = index === 0;
       const isLast = index === edges.length - 1;
       let classes = 'w-100';
       if (!isLast) {

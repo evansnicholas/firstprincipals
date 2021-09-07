@@ -4,6 +4,7 @@
         "description": "<p>Design by Imme Huetink.</p><p>Production and finishing by First Principals.</p><p>Printed on a Cottover t-shirt (charcoal).</p>",
         "id": "t-rising-vine",
         "price": 30,
+        "hide": true,
         "images": [
             { "image": "./images/rising_vine_back.jpg" },
             { "image": "./images/rising_vine_front.jpg" },
@@ -16,6 +17,7 @@
         "description": "<p>The Lighthouse, designed and screen printed by First Principals in Utrecht.</p><p>The T-shirt is white, 160g, made by Cottover from FairTrade, GOTS certified cotton.</p>",
         "id": "t-lighthouse",
         "price": 27.50,
+        "hide": true,
         "images": [
             { "image": "./images/lightouse-man-23052020.jpg" },
             { "image": "./images/lighthouse-female-23052020.jpg" }
