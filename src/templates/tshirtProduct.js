@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Site from "../components/Site";
 import Image from "gatsby-image"
-import { Link } from "gatsby";
 import s from './tshirtProduct.module.scss';
 import leftArrow from '../components/icons/left_arrow.svg';
 import rightArrow from '../components/icons/right_arrow.svg';
@@ -48,12 +47,12 @@ export default ({ data }) => {
             <button 
               className={`${s.prev}`} 
               onClick={() => setActive(updateActive, numImages, activeImageIndex - 1)}>
-              <img src={leftArrow} />
+              <img src={leftArrow} alt="left-arrow"/>
             </button>
             <button 
               className={`${s.next}`}
               onClick={() => setActive(updateActive, numImages, activeImageIndex + 1)}>
-              <img src={rightArrow} />
+              <img src={rightArrow} alt="right-arrow"/>
             </button>
           </div>
           <div className="w-100 w-50-l pl3-l">

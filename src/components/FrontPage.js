@@ -1,11 +1,9 @@
 import React from "react";
 import peopleInField from "./images/people_in_field_4x3.jpg";
 import losanges_4x3 from "./images/losange_4x3.jpg";
-import vanishingStaircase from "./images/vanishing_staircase.jpg";
 import flaxFromTop from "./images/flax_from_top.jpg";
 import losangesNoBackground from "./images/losanges_no_background.jpg";
 import Carousel from 'nuka-carousel';
-import s from './FrontPage.module.scss';
 import { Link } from "gatsby";
 
 export default class extends React.Component {

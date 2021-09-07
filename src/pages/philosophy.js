@@ -27,20 +27,20 @@ export default () => (
         <div className="bb bw1 w-25-ns w-10" />
       </header>
       <div className="fn fl-ns w-75-ns">
-        <h2 className="pa0 ma0 f5-ns f6 lh-copy measure mt0-ns tj i">Know the raw materials</h2>
+        <h2 className="mb0 f5-ns f6 lh-copy measure mt0-ns tj i">Know the raw materials</h2>
         <p className="f5-ns f6 lh-copy measure mt0-ns tj">
           The fabrics and trimmings (buttons, zips etc...) we use must be chosen with the utmost care to minimize environmental impact.
           This entails avoiding oil based synthetic fibres and ensuring all natural fibres are cultivated in a responsible manner.
         </p>
 
-        <h2 className="pa0 ma0 f5-ns f6 lh-copy measure mt0-ns tj i">Know the maker</h2>
+        <h2 className="pa0 ma0 f5-ns f6 lh-copy measure tj i">Know the maker</h2>
         <p className="f5-ns f6 lh-copy measure mt0-ns tj">
           We must ensure that no abusive labour practices are employed in the process of transforming the raw materials into the finished garment.
           This applies to any human work involved in the entire production process: from harvesting the raw material, to spinning and weaving the fabric, to 
           stitching the garment together.
         </p>
 
-        <h2 className="pa0 ma0 f5-ns f6 lh-copy measure mt0-ns tj i">Understand the production process</h2>
+        <h2 className="pa0 ma0 f5-ns f6 lh-copy measure tj i">Understand the production process</h2>
         <p className="f5-ns f6 lh-copy measure mt0-ns tj">
           In order to ensure a final garment of the highest quality, we must understand each step in the process. We must know how to grow the fibres, 
           how to spin and weave, how to design pattern pieces and finally how to stitch these together into finished garments. Without this knowledge, we
@@ -49,7 +49,7 @@ export default () => (
 
         
 
-        <h2 className="pa0 ma0 f5-ns f6 lh-copy measure mt0-ns tj i">Clothing over fashion</h2>
+        <h2 className="pa0 ma0 f5-ns f6 lh-copy measure tj i">Clothing over fashion</h2>
         <p className="f5-ns f6 lh-copy measure mt0-ns tj">
           Clothing is a visual medium for expressing identity. This means that we care deeply about how our clothing looks and how it makes our 
           customers look. However, we also believe some styles will always look good, no matter what the current fashion. We aim to make clothing that
@@ -66,6 +66,12 @@ export default () => (
       <div className="fn fl-ns w-75-ns">
         <p className="f5-ns f6 lh-copy measure mt0-ns tj">
           In order to comply with our foundational principles, First Principals strives to operate as a <b>vertically integrated</b> clothing company.
+          This means that our ultimate objective is to have complete control of the production chain, from the seed to the skirt. Our ideal company would 
+          grow natural fibres, harvest them, process them into yarn, weave (or knit) the yarn into fabric, and finally stitch the fabric into finished garments.
+          This end goal is very similar in spirit to restaurants that source all their produce from a restaurant garden and local producers. 
+          We are aware that achieving this objective alone is a monumental task. For this reason, we are working with a number of collaborators and 
+          establishing a community of like-minded makers. By pulling together, and each providing expertise at different stages of the production chain, 
+          we are hopeful that we can produce clothing in a radically transparent and responsible manner.
         </p>
       </div>
     </article>

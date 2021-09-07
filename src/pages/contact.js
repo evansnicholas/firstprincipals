@@ -50,7 +50,7 @@ export default () => {
           data-netlify-honeypot="bot-field"
         >
           <div className="mt3">
-            <label className="db fw4 lh-copy f6" for="email-address">
+            <label className="db fw4 lh-copy f6" htmlFor="email-address">
               Your email address*:
             </label>
             <input
@@ -63,7 +63,7 @@ export default () => {
             />
           </div>
           <div className="mt3">
-            <label className="db fw4 lh-copy f6" for="message">
+            <label className="db fw4 lh-copy f6" htmlFor="message">
               Your message:
             </label>
             <textarea

@@ -17,7 +17,7 @@ export default ({ data }) => {
   });
 
   if (products.length === 0) {
-    products = <p>Collection in the works ...</p>;
+    products = <p className="ph2 ph0-l">We are working on our first collection. If you would like to receive updates, please sign up to our newsletter, or follow us on the socials. </p>;
   }
 
   return( 
