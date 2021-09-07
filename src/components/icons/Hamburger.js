@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Hamburger.module.scss";
+import * as styles from "./Hamburger.module.scss";
 
 export default ({ isOpen, toggleMenu, extraClasses }) => {
   const activeClass = isOpen ? styles.isActive : "not-active";

@@ -1,5 +1,5 @@
 import React from "react";
-import s from './PostLink.module.scss';
+import * as s from './PostLink.module.scss';
 import { Link } from "gatsby";
 
 export default ({ post }) => {
@@ -7,7 +7,7 @@ export default ({ post }) => {
   return (
     <div className={`ph2 ph0-l`}>
       <Link
-        className={`${s.postLink} black dim link`}
+        className={`black dim link`}
         to={post.frontmatter.id}>
         <h1 className="mv0">{post.frontmatter.title}</h1>
       </Link>

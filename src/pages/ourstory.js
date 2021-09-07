@@ -3,7 +3,7 @@ import Site from "../components/Site";
 import aboutImage from "../components/images/about.jpeg";
 import timelineImage from "../components/images/Timeline_27032020.png"
 import { LinkClasses } from "../constants";
-import s from './ourstory.module.scss';
+import * as s from './ourstory.module.scss';
 import { Link } from "gatsby";
 
 function ToggleContent({ chapter, activeChapters, children}) {
