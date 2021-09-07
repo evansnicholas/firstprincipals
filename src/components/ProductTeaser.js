@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "gatsby-image"
-import s from "./ProductTeaser.module.scss";
+import * as s from "./ProductTeaser.module.scss";
 import { Link } from "gatsby";
 
 export default ({ product }) => {

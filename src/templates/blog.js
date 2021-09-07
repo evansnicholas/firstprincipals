@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Site from "../components/Site";
-import s from './blog.module.scss';
+import * as s from './blog.module.scss';
 import Img from "gatsby-image";
 
 export default ({ data }) => {

@@ -5,12 +5,11 @@ import CookieConsent from './CookieConsent';
 import Hamburger from './icons/Hamburger';
 import Menu from './Menu';
 import { Helmet } from "react-helmet";
-import s from './Navbar.module.scss';
+import * as s from './Navbar.module.scss';
 import CartIcon from './icons/CartIcon';
 
 export default ({ fadeContent }) => {
   const [isOpen, openMenu] = useState(false);
-  const bodyClass = isOpen ? s.noScroll : "";
   const lineColour = isOpen ? "b--white" : "b--black-10";
   
   fadeContent(isOpen);
@@ -18,7 +17,7 @@ export default ({ fadeContent }) => {
   return (
     <div>
       <header className="bg-white relative tc pt2 avenir h-100">
-        <Helmet bodyAttributes={{ class: bodyClass }} />
+        <Helmet bodyAttributes={{}} />
         <div className="absolute left-0">
           <Hamburger isOpen={isOpen} toggleMenu={openMenu} extraClasses="pl2 pl0-l pr1" />
           <button className={`snipcart-checkout ${s.cart}`}>

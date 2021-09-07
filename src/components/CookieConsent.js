@@ -1,6 +1,6 @@
 import React from "react";
 import { CSSTransition } from "react-transition-group";
-import styles from "./CookieConsent.module.scss";
+import * as styles from "./CookieConsent.module.scss";
 import { CookieConsentKey } from "../constants";
 import { Link } from "gatsby";
 

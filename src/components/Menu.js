@@ -1,5 +1,5 @@
 import React from "react";
-import s from './Menu.module.scss';
+import * as s from './Menu.module.scss';
 import { Link } from "gatsby";
 
 export default ({ isOpen }) => {
