@@ -9,7 +9,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#000000`,
         display: `standalone`,
-        icon: `src/components/images/compact_logo.png`
+        icon: `src/components/images/fp_800px.png`
       },
     },
     `gatsby-plugin-sass`,
