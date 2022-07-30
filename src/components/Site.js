@@ -6,7 +6,7 @@ import Libs from "./Libs";
 import Content from "./Content";
 import './Site.scss';
 
-export default ({ children }) => {
+const Site = ({ children }) => {
   const [contentFaded, fadeContent] = useState(false);
 
   return (
@@ -21,3 +21,5 @@ export default ({ children }) => {
     </div>
   );
 };
+
+export default Site;

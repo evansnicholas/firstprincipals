@@ -4,7 +4,9 @@ import * as styles from "./CookieConsent.module.scss";
 import { CookieConsentKey } from "../constants";
 import { Link } from "gatsby";
 
-export default class extends React.Component {
+
+
+class CookieConsent extends React.Component {
   constructor(props) {
     super(props);
     this.handleClick = this.handleClick.bind(this);
@@ -79,3 +81,5 @@ export default class extends React.Component {
     );
   }
 }
+
+export default CookieConsent;

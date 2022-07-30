@@ -3,10 +3,11 @@ import peopleInField from "./images/people_in_field_4x3.jpg";
 import losanges_4x3 from "./images/losange_4x3.jpg";
 import flaxFromTop from "./images/flax_from_top.jpg";
 import losangesNoBackground from "./images/losanges_no_background.jpg";
+import GarmentMakingVideo from "../blog-posts/videos/Garment_Making.mp4";
 import Carousel from 'nuka-carousel';
 import { Link } from "gatsby";
 
-export default class extends React.Component {
+class FrontPage extends React.Component {
 
   constructor(props) {
     super(props);
@@ -83,7 +84,15 @@ export default class extends React.Component {
             <Link className="f5 i dib outline pa2 black no-underline" to="/philosophy">What does that mean?</Link>
           </div>
         </article>
+        <article className="mb4 tc">
+          <div className="flex justify-center mb4"><div className="bt bw2 h1 w4"></div></div>
+          <video autoPlay muted loop className="w-100">
+            <source src={GarmentMakingVideo} type="video/mp4" />
+          </video>
+        </article>
       </div>
     )
   };
 };
+
+export default FrontPage;
