@@ -8,7 +8,7 @@ import { Helmet } from "react-helmet";
 import * as s from './Navbar.module.scss';
 import CartIcon from './icons/CartIcon';
 
-export default ({ fadeContent }) => {
+const Navbar = ({ fadeContent }) => {
   const [isOpen, openMenu] = useState(false);
   const lineColour = isOpen ? "b--white" : "b--black-10";
   
@@ -34,3 +34,5 @@ export default ({ fadeContent }) => {
     </div>
   )
 };
+
+export default Navbar;

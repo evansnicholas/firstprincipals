@@ -1,7 +1,7 @@
 import React from "react";
 import * as s from './Content.module.scss';
 
-export default ({ faded, children }) => {
+const Content = ({ faded, children }) => {
    const fadedClass = faded ? s.faded : "";
 
     return (
@@ -9,4 +9,6 @@ export default ({ faded, children }) => {
         {children}
       </div>
     );
-}
+};
+
+export default Content;

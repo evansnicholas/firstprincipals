@@ -4,14 +4,20 @@ import Site from "../components/Site";
 import * as s from './blog.module.scss';
 import Img from "gatsby-image";
 
-export default ({ data }) => {
+const Blog = ({ data }) => {
     const { frontmatter, html } = data.markdownRemark;
-    let image;
+    let imageOrVideo;
     if (frontmatter.featured) {
-      image = <Img
+      imageOrVideo = <Img
         fluid={frontmatter.featured.childImageSharp.fluid}
-        alt="Featured Image"
+        alt="Featured Image or Video"
       />
+    }
+    if (frontmatter.featuredVideo) {
+      imageOrVideo =
+        <video controls muted loop className="w-100">
+          <source src={frontmatter.featuredVideo.publicURL} type="video/mp4" />
+        </video>
     }
 
     return (
@@ -21,7 +27,7 @@ export default ({ data }) => {
             <div className="blog-post">
               <h1 className="mb0 f1">{frontmatter.title}</h1>
               <p className="mt1 near-black fw1">{frontmatter.date}</p>
-              {image}
+              {imageOrVideo}
               <div
                 className="blog-post-content lh-copy pt2"
                 dangerouslySetInnerHTML={{ __html: html }}
@@ -48,7 +54,12 @@ export const pageQuery = graphql`
             }
           }
         }
+        featuredVideo {
+          publicURL
+        }
       }
     }
   }
 `
+
+export default Blog;

@@ -1,8 +1,7 @@
 import React from "react";
-import * as s from './PostLink.module.scss';
 import { Link } from "gatsby";
 
-export default ({ post }) => {
+export const PostLink = ({ post }) => {
 
   return (
     <div className={`ph2 ph0-l`}>
@@ -14,4 +13,6 @@ export default ({ post }) => {
       <p className={`dark-gray pt1 mv0 sans-serif fw1`}>{post.frontmatter.date}</p>
     </div>
   );
-}
+};
+
+export default PostLink;

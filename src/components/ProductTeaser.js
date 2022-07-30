@@ -3,7 +3,7 @@ import Image from "gatsby-image"
 import * as s from "./ProductTeaser.module.scss";
 import { Link } from "gatsby";
 
-export default ({ product }) => {
+const ProductTeaser = ({ product }) => {
     return (
         <div className={`mh3 ml0-l ${s.productBox} relative`}>
           <Link className="link black no-underline dim black-50" to={product.id}>
@@ -19,4 +19,6 @@ export default ({ product }) => {
           </Link>
         </div>
     );
-}
+};
+
+export default ProductTeaser;

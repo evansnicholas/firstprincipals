@@ -2,7 +2,7 @@ import React from "react";
 import * as s from './Menu.module.scss';
 import { Link } from "gatsby";
 
-export default ({ isOpen }) => {
+const Menu = ({ isOpen }) => {
   const state = isOpen ? s.open : s.closed;
 
   return (
@@ -39,4 +39,6 @@ export default ({ isOpen }) => {
       </nav>
     </div>
   );
-}
+};
+
+export default Menu;
