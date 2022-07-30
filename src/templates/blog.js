@@ -13,7 +13,6 @@ const Blog = ({ data }) => {
         alt="Featured Image or Video"
       />
     }
-    console.log(frontmatter.featuredVideo);
     if (frontmatter.featuredVideo) {
       imageOrVideo =
         <video controls muted loop className="w-100">
